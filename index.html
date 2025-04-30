@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="starwars_fonts.css">
+  <meta charset="UTF-8">
+  <title>It's a Trap (Game)</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+    }
+    #score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      color: #FFFF00;
+      font-family: Arial, sans-serif;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Load scripts in the correct order -->
+  <script src="startscreen.js"></script>
+  <script src="endscreen.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
